@@ -8,7 +8,7 @@ const Modal = ({show, data, onSubmit, onCancel, editUser}) => {
   }, [editUser]);
 
   const initialFormState = () => {
-    return editUser ? {id: null, name: 'Pulsera', price: '12000'} : {id: null, name: '', age: ''};
+    return editUser ? {id: null, name: 'N/A', price: '0'} : {id: null, name: '', age: ''};
   } 
 
   const [formData, setFormData] = useState(initialFormState);
@@ -31,12 +31,12 @@ const Modal = ({show, data, onSubmit, onCancel, editUser}) => {
         <form onSubmit={submitData}>
           <h3>{editUser ? 'edit details' : 'new details'}</h3>
           <div className="modal-section">
-            <label>Producto</label>
+            <label>Fecha</label>
             <input type="text" name="name" value={formData.name} 
               onChange={onInputChange} autoFocus autoComplete="off" />
           </div>
           <div className="modal-section">
-            <label>Precio $</label>
+            <label>Ocupado $</label>
             <input type="text" name="price" value={formData.price} 
               onChange={onInputChange} autoComplete="off" />
           </div>

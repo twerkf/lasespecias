@@ -62,12 +62,12 @@ function Dashboard() {
   return (
     <div className="dashboard">
       <div className="dashboard__container">
-      <h1 className="title">Factura</h1>
-        Usuario ingresado:
+      <h1 className="title">Horario Salón social</h1>
+        Residente ingresado:
         <div>{name}</div><br></br>
           <DataItem data={userData} onEdit={editUserHandler} onDelete={deleteUser} />
           <Modal onCancel={toggleModal} onSubmit={addUser} show={showModal} data={userData} editUser={currentUser} /><br></br>
-          <button onClick={toggleModal}>Insertar</button><br></br><br></br><br></br>
+          <button onClick={toggleModal}>Reservar</button><br></br><br></br><br></br>
         <button className="dashboard__btn" onClick={logout}>
           Salir
         </button>

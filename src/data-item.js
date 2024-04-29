@@ -4,8 +4,8 @@ const DataItem = ({data, onEdit, onDelete}) => (
   <table>
     <thead>
       <tr>
-        <th>Producto</th>
-        <th>precio</th>
+        <th>Fecha</th>
+        <th>Ocupado</th>
       </tr>
     </thead>
     <tbody>
