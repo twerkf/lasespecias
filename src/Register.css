@@ -2,6 +2,21 @@
   display: flex;
   align-items: flex-start;
   justify-content: right;
+  padding: auto;
+}
+
+.text {
+  border: 3px solid rgba(0, 0, 139, 0);
+  width: 500px;
+  padding: 2px;
+  min-height: auto;
+}
+
+.info {
+  padding: 50px;
+  font-size: 55px;
+  text-align: left;
+  color: rgb(0, 0, 0);
 }
 
 .wallpaper {
@@ -11,7 +26,7 @@
 }
 
 .register__container {
-  padding: 155px;
+  padding: 45px;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -20,7 +35,6 @@
 .register__textBox {
   padding: 10px;
   font-size: 18px;
-  margin-bottom: 10px;
 }
 
 .register__btn {

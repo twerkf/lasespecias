@@ -27,6 +27,10 @@ function Register() {
 
   return (
   <div className="wallpaper">
+    <div className="info">¿quienes somos? </div>
+      <div  className="text">
+        En el Conjunto residencial Las especias se conforma un espacio de vivienda organizado y en donde se busca propiciar espacios de comunicación, sana convivencia y en donde reine la armonía, la paz, el respeto y la equidad para todos los propietarios siguiendo los lineamientos establecidos en nuestro reglamento con el fin de lograr un desarrollo humano sostenible.
+      </div>
     <div className="register">
       <div className="register__container">
         <input
