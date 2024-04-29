@@ -4,13 +4,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../logo.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
 }
 
 .login__container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #dcdcdc;
+  background-color: #b0ec619a;
   padding: 30px;
 }
 
