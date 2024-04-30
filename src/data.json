@@ -2,11 +2,7 @@
     {
       "id": 1,
       "name": "Mayo 8 2024",
-      "price": 1
-    },
-    {
-      "id": 2,
-      "name": "Disponible",
-      "price": 1
+      "price": "si"
     }
+    
   ]

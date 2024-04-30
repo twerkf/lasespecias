@@ -15,7 +15,7 @@ const Modal = ({show, data, onSubmit, onCancel, editUser}) => {
 
   const onInputChange = event => {
     const { name, value } = event.target;
-    setFormData({ ...formData, [name]: (name === 'price' ? parseInt(value) : value )});
+    setFormData({ ...formData, [name]: (name === 'price' ? String(value) : value )});
   }
 
   const submitData = event => {
@@ -32,11 +32,11 @@ const Modal = ({show, data, onSubmit, onCancel, editUser}) => {
           <h3>{editUser ? 'edit details' : 'new details'}</h3>
           <div className="modal-section">
             <label>Fecha</label>
-            <input type="text" name="name" value={formData.name} 
+            <input type="date" name="name" value={formData.name} 
               onChange={onInputChange} autoFocus autoComplete="off" />
           </div>
           <div className="modal-section">
-            <label>Ocupado $</label>
+            <label>Ocupado? </label>
             <input type="text" name="price" value={formData.price} 
               onChange={onInputChange} autoComplete="off" />
           </div>
