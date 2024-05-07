@@ -6,7 +6,7 @@ import { auth, db, logout } from "./firebase";
 import { useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { query, collection, getDocs, where, namedQuery } from "firebase/firestore";
+import { query, collection, getDocs, where } from "firebase/firestore";
 
 function Dashboard() {
   const [showModal, setShowModal] = useState(false);
@@ -62,9 +62,9 @@ function Dashboard() {
   return (
     <div className="dashboard">
       <div className="dashboard__container">
-      <h1 className="title">Fecha Salón social</h1>
-        Fecha agendada:
-        <div></div><br></br>
+      <h1 className="title">Fechas para Salón social</h1>
+        Fecha agendada: (6 HORAS PERMITIDAS A PARTIR DE HORA)
+        <div>{name}</div>
           <DataItem data={userData} onEdit={editUserHandler} onDelete={deleteUser} />
           <Modal onCancel={toggleModal} onSubmit={addUser} show={showModal} data={userData} editUser={currentUser} /><br></br>
           <button onClick={toggleModal}>Reservar</button><br></br><br></br><br></br>

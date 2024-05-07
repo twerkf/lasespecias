@@ -32,7 +32,7 @@ const Modal = ({show, data, onSubmit, onCancel, editUser}) => {
           <h3>{editUser ? 'edit details' : 'new details'}</h3>
           <div className="modal-section">
             <label>Fecha</label>
-            <input type="date" name="name" value={formData.name} 
+            <input type="datetime-local" name="name" value={formData.name} 
               onChange={onInputChange} autoFocus autoComplete="off" />
           </div>
           <div className="modal-section">
